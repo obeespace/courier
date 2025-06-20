@@ -1,5 +1,9 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import { Sora } from "next/font/google";
+import Nav from "./components/Nav.js"
+
+const sora = Sora({ subsets: ["latin"] });
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -20,8 +24,8 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+        className={sora.className} suppressHydrationWarning={true}
+      ><Nav />
         {children}
       </body>
     </html>
