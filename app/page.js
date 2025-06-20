@@ -51,7 +51,7 @@ export default function Home() {
             items-center top-0 right-0 left-0 
             bottom-0 text-white w-5/6 mx-auto text-center z-20"
         >
-          <p className="w-4/6 lg:w-full text-3xl mt-5 lg:text-4xl font-semibold font-playfair">
+          <p className="w-4/6 lg:w-full text-2xl mt-5 lg:text-4xl font-semibold">
             Fast & Reliable Delivery Service
           </p>
           <p className="italic mt-3 font-thin lg:text-lg text-center">
