@@ -54,7 +54,7 @@ export default function Home() {
           <p className="w-4/6 lg:w-full text-2xl mt-5 lg:text-4xl font-semibold">
             Fast & Reliable Delivery Service
           </p>
-          <p className="italic mt-3 font-thin lg:text-lg text-center">
+          <p className="mt-3 font-thin lg:text-lg text-center">
             Get your packages delivered quickly and securely with our
             professional courier service. Same-day delivery available in major
             cities.
@@ -195,35 +195,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* <section className="relative">
-        <Image
-          alt="purple background"
-          src={purplebackground}
-          className="w-screen h-80 lg:h-96 lg:object-cover"
-        />
-        <div
-          className="absolute flex flex-col justify-center 
-            items-center top-0 right-0 left-0 
-            bottom-0 text-white w-5/6 mx-auto text-center"
-        >
-          <h2 className="text-3xl lg:text-4xl font-bold">Ready to Ship with SwiftCourier?</h2>
-          <p className="text-xl opacity-90 max-w-2xl mx-auto">
-            Join thousands of satisfied customers who trust us with their deliveries. Get started today and experience
-            the difference.
-          </p>
-          <div className="center">
-            
-            <button
-              
-              
-              className="text-lg px-8 border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary"
-            >
-              Contact Sales
-            </button>
-          </div>
-        </div>
-      </section> */}
-
+      {/* Features Section */}
       <section className="py-20 lg:mt-20 mt-10 text-white bg-gradient-to-br from-purple-950 via-indigo-950 to-pink-950">
         <div className="container w-5/6 mx-auto">
           <div className="text-center space-y-4 mb-16">
@@ -241,7 +213,7 @@ export default function Home() {
                 </div>
               </div>
               <h3 className="text-xl font-semibold">Fast Delivery</h3>
-              <p className="text-muted-foreground">
+              <p className="text-muted-foreground w-5/6 mx-auto">
                 Same-day and next-day delivery available for urgent shipments
               </p>
             </div>
@@ -253,7 +225,7 @@ export default function Home() {
                 </div>
               </div>
               <h3 className="text-xl font-semibold">Secure & Safe</h3>
-              <p className="text-muted-foreground">
+              <p className="text-muted-foreground w-5/6 mx-auto">
                 Your packages are fully insured and handled with the utmost care
               </p>
             </div>
@@ -265,7 +237,7 @@ export default function Home() {
                 </div>
               </div>
               <h3 className="text-xl font-semibold">24/7 Support</h3>
-              <p className="text-muted-foreground">
+              <p className="text-muted-foreground w-5/6 mx-auto">
                 Our customer service team is available around the clock to help
                 you
               </p>
@@ -278,7 +250,7 @@ export default function Home() {
                 </div>
               </div>
               <h3 className="text-xl font-semibold">Trusted Service</h3>
-              <p className="text-muted-foreground">
+              <p className="text-muted-foreground w-5/6 mx-auto">
                 Over 50,000 satisfied customers trust us with their deliveries
               </p>
             </div>
