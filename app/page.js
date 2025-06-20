@@ -55,9 +55,9 @@ export default function Home() {
             Fast & Reliable Delivery Service
           </p>
           <p className="italic mt-3 font-thin lg:text-lg text-center">
-            "Get your packages delivered quickly and securely with our
+            Get your packages delivered quickly and securely with our
             professional courier service. Same-day delivery available in major
-            cities."
+            cities.
           </p>
 
           <Link href="contact">
@@ -229,7 +229,7 @@ export default function Home() {
           <div className="text-center space-y-4 mb-16">
             <h2 className="text-2xl font-bold">Why Choose SwiftCourier?</h2>
             <p className="mx-auto font-light">
-              We're committed to providing the best delivery experience possible
+              We are committed to providing the best delivery experience possible
             </p>
           </div>
 
@@ -292,7 +292,7 @@ export default function Home() {
           <div className="text-center space-y-4 mb-5">
             <h2 className="text-2xl font-bold">What Our Customers Say</h2>
             <p className="font-light mx-auto">
-              Don't just take our word for it - hear from our satisfied
+              Dont just take our word for it - hear from our satisfied
               customers
             </p>
           </div>
