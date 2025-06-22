@@ -11,7 +11,7 @@ import Link from "next/link";
 
 const images = [contact1, contact2, contact3];
 
-const page = () => {
+const ContactPage = () => {
   const [current, setCurrent] = useState(0);
   useEffect(() => {
     const interval = setInterval(() => {
@@ -22,7 +22,7 @@ const page = () => {
 
   const [isSubmitted, setIsSubmitted] = useState(false);
 
-  const handleSubmit = () => {
+  const handleSubmit = (e) => {
     e.preventDefault();
     // Simulate form submission
     setIsSubmitted(true);
@@ -100,7 +100,7 @@ const page = () => {
                 </div>
                 <h3 className="font-semibold">Hours</h3>
                 <p className="text-sm text-muted-foreground mb-5 text-gray-500">
-                  We're here when you need us
+                  We are here when you need us
                 </p>
                 <p className="font-medium">24/7 Support</p>
                 <p className="text-sm text-muted-foreground">
@@ -121,7 +121,7 @@ const page = () => {
               <div className="space-y-4 mb-8">
                 <h2 className="text-3xl font-bold">Send Us a Message</h2>
                 <p className="text-muted-foreground">
-                  Fill out the form below and we'll get back to you within 24
+                  Fill out the form below and we will get back to you within 24
                   hours.
                 </p>
               </div>
@@ -133,7 +133,7 @@ const page = () => {
                     Contact Form
                   </p>
                   <p>
-                    Tell us about your delivery needs and we'll provide a
+                    Tell us about your delivery needs and we will provide a
                     customized solution.
                   </p>
                 </div>
@@ -145,7 +145,7 @@ const page = () => {
                       </div>
                       <h3 className="text-xl font-semibold">Message Sent!</h3>
                       <p className="text-muted-foreground">
-                        Thank you for contacting us. We'll get back to you
+                        Thank you for contacting us. We will get back to you
                         within 24 hours.
                       </p>
                     </div>
@@ -354,4 +354,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default ContactPage;
