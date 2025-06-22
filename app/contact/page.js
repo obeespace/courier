@@ -12,6 +12,10 @@ import Link from "next/link";
 const images = [contact1, contact2, contact3];
 
 const ContactPage = () => {
+  const [toggle, setToggle] = useState(false);
+  const handletoggle = () => {
+    setToggle(!toggle);
+  };
   const [current, setCurrent] = useState(0);
   useEffect(() => {
     const interval = setInterval(() => {
@@ -117,7 +121,7 @@ const ContactPage = () => {
         <div className="container ">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             {/* Contact Form */}
-            <div className="border border-gray-200 rounded-3xl px-10 py-7">
+            <div className="">
               <div className="space-y-4 mb-8">
                 <h2 className="text-3xl font-bold">Send Us a Message</h2>
                 <p className="text-muted-foreground">
@@ -155,52 +159,37 @@ const ContactPage = () => {
                         <div className="space-y-2 flex flex-col">
                           <label htmlFor="firstName">First Name</label>
                           <div className="rounded-xl px-3 py-2 border border-gray-300">
-                            <input
-                              
-                              className="flex-1 outline-none"
-                            />
+                            <input className="flex-1 outline-none" />
                           </div>
                         </div>
                         <div className="space-y-2 flex flex-col">
                           <label htmlFor="">Last Name</label>
                           <div className="rounded-xl px-3 py-2 border border-gray-300">
-                            <input
-                              
-                              className="flex-1 outline-none"
-                            />
+                            <input className="flex-1 outline-none" />
                           </div>
                         </div>
                       </div>
 
                       <div className="space-y-2 flex flex-col">
-                          <label htmlFor="">Email</label>
-                          <div className="rounded-xl px-3 py-2 border border-gray-300">
-                            <input
-                              
-                              className="flex-1 outline-none"
-                            />
-                          </div>
+                        <label htmlFor="">Email</label>
+                        <div className="rounded-xl px-3 py-2 border border-gray-300">
+                          <input className="flex-1 outline-none" />
                         </div>
+                      </div>
 
                       <div className="space-y-2 flex flex-col">
-                          <label htmlFor="firstName">Phone Number</label>
-                          <div className="rounded-xl px-3 py-2 border border-gray-300">
-                            <input
-                              
-                              className="flex-1 outline-none"
-                            />
-                          </div>
+                        <label htmlFor="firstName">Phone Number</label>
+                        <div className="rounded-xl px-3 py-2 border border-gray-300">
+                          <input className="flex-1 outline-none" />
                         </div>
+                      </div>
 
-                        <div className="space-y-2 flex flex-col">
-                          <label htmlFor="firstName">Company (Optional)</label>
-                          <div className="rounded-xl px-3 py-2 border border-gray-300">
-                            <input
-                              
-                              className="flex-1 outline-none"
-                            />
-                          </div>
+                      <div className="space-y-2 flex flex-col">
+                        <label htmlFor="firstName">Company (Optional)</label>
+                        <div className="rounded-xl px-3 py-2 border border-gray-300">
+                          <input className="flex-1 outline-none" />
                         </div>
+                      </div>
 
                       <div className="space-y-2 flex flex-col">
                         <label htmlFor="service">Service Type</label>
@@ -229,7 +218,10 @@ const ContactPage = () => {
                         />
                       </div>
 
-                      <button type="submit" className="w-fit flex gap-2 items-center rounded-lg py-2 px-4 bg-purple-900 shadow-md text-white">
+                      <button
+                        type="submit"
+                        className="w-fit flex gap-2 items-center rounded-lg py-2 px-4 bg-purple-900 shadow-md text-white"
+                      >
                         <FiSend className="h-4 w-4" />
                         Send Message
                       </button>
@@ -265,10 +257,12 @@ const ContactPage = () => {
               </div>
 
               {/* Service Centers */}
-              <div>
+              <div className="">
                 <div className="my-6">
                   <p className="text-xl font-semibold">Service Centers</p>
-                  <p className="font-light">Find a SwiftCourier location near you</p>
+                  <p className="font-light">
+                    Find a SwiftCourier location near you
+                  </p>
                 </div>
                 <div className="space-y-4">
                   <div className="">
@@ -310,40 +304,52 @@ const ContactPage = () => {
               <div className="mt-10">
                 <div>
                   <p className="text-xl font-semibold">Quick Answers</p>
-                  <p className="font-light">Common questions about our services</p>
+                  <p className="font-light">
+                    Common questions about our services
+                  </p>
                 </div>
                 <div className="mt-5">
                   <div>
-                    <div className="py-7 px-5 shadow-md  border border-white rounded-3xl"><p>Delivery</p><h4 className="font-semibold mb-2 ">
-                      What are your delivery hours?
-                    </h4></div>
-                    <p className="text-sm text-muted-foreground">
+                    <div onClick={handletoggle} className="py-7 px-5 shadow-md border border-white rounded-3xl">
+                      <p>Delivery</p>
+                      <h4 className="font-semibold mb-2 ">
+                        What are your delivery hours?
+                      </h4>
+                    </div>
+                    {toggle && <p className="text-sm py-4 px-5">
                       We offer 24/7 delivery services. Standard deliveries are
                       made between 9AM-6PM, with express and emergency services
                       available around the clock.
-                    </p>
+                    </p>}
                   </div>
 
                   <div>
-                    <h4 className="font-semibold mb-2">
-                      How can I track my package?
-                    </h4>
-                    <p className="text-sm text-muted-foreground">
+                    <div onClick={handletoggle} className="mt-5 py-7 px-5 shadow-md border border-white rounded-3xl">
+                      <p>Tracking</p>
+                      <h4 className="font-semibold mb-2 ">
+                        How can I track my package?
+                      </h4>
+                    </div>
+                    {toggle && <p className="text-sm py-4 px-5">
                       Use our online tracking system with your tracking number,
                       or call our customer service line for real-time updates.
-                    </p>
+                    </p>}
                   </div>
 
                   <div>
-                    <h4 className="font-semibold mb-2">
-                      Do you offer insurance?
-                    </h4>
-                    <p className="text-sm text-muted-foreground">
+                    <div onClick={handletoggle} className="mt-5 py-7 px-5 shadow-md border border-white rounded-3xl">
+                      <p>Insurance</p>
+                      <h4 className="font-semibold mb-2 ">
+                        Do you offer insurance?
+                      </h4>
+                    </div>
+                    {toggle && <p className="text-sm py-4 px-5">
                       Yes, all packages are automatically insured up to $100.
                       Additional insurance coverage is available for high-value
                       items.
-                    </p>
+                    </p>}
                   </div>
+
                 </div>
               </div>
             </div>
