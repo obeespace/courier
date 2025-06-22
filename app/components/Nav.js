@@ -26,7 +26,7 @@ const Header = () => {
             Services
           </Link>
           <Link href="/about">About Us</Link>
-          <Link href="/about">Contact Us</Link>
+          <Link href="/contact">Contact Us</Link>
         </div>
 
         <div className="hidden lg:flex gap-8">
@@ -51,7 +51,7 @@ const Header = () => {
             <Link href='/'><p className="flex gap-3 items-center" onClick={() => setOpen(false)}><TiHomeOutline/> Home</p></Link>
             <Link href='about'><p className="flex gap-3 items-center" onClick={() => setOpen(false)}><GrProjects/> Services</p></Link>
               <Link href="internet" ><p className="flex gap-3 items-center" onClick={() => setOpen(false)}><MdOutlineWorkspaces/> About Us</p></Link>
-              <Link href='television'><p className="flex gap-3 items-center" onClick={() => setOpen(false)}><LuMessageSquareText/> Contact Us</p></Link>
+              <Link href='contact'><p className="flex gap-3 items-center" onClick={() => setOpen(false)}><LuMessageSquareText/> Contact Us</p></Link>
               <Link href='mobile'><p className="flex gap-3 items-center" onClick={() => setOpen(false)}><MdOutlineTrackChanges /> Track Parcel</p></Link>
               
             </div>

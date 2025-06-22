@@ -199,7 +199,7 @@ export default function Home() {
       <section className="py-20 lg:mt-20 mt-10 text-white bg-gradient-to-br from-purple-950 via-indigo-950 to-pink-950">
         <div className="container w-5/6 mx-auto">
           <div className="text-center space-y-4 mb-16">
-            <h2 className="text-2xl font-bold">Why Choose SwiftCourier?</h2>
+            <h2 className="text-2xl font-bold">Why Choose SnappiGo?</h2>
             <p className="mx-auto font-light">
               We are committed to providing the best delivery experience possible
             </p>
