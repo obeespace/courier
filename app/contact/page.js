@@ -32,6 +32,12 @@ const ContactPage = () => {
     setIsSubmitted(true);
     setTimeout(() => setIsSubmitted(false), 3000);
   };
+
+  const [activeFaq, setActiveFaq] = useState(null);
+  const handleFaqToggle = (idx) => {
+    setActiveFaq(activeFaq === idx ? null : idx);
+  };
+
   return (
     <main>
       {/* Hero Section with Carousel */}
@@ -261,7 +267,7 @@ const ContactPage = () => {
                 <div className="my-6">
                   <p className="text-xl font-semibold">Service Centers</p>
                   <p className="font-light">
-                    Find a SwiftCourier location near you
+                    Find a SnappiGo location near you
                   </p>
                 </div>
                 <div className="space-y-4">
@@ -310,44 +316,50 @@ const ContactPage = () => {
                 </div>
                 <div className="mt-5">
                   <div>
-                    <div onClick={handletoggle} className="py-7 px-5 shadow-md border border-white rounded-3xl">
+                    <div onClick={() => handleFaqToggle(0)} className="py-7 px-5 shadow-md border border-white rounded-3xl cursor-pointer">
                       <p>Delivery</p>
                       <h4 className="font-semibold mb-2 ">
                         What are your delivery hours?
                       </h4>
                     </div>
-                    {toggle && <p className="text-sm py-4 px-5">
-                      We offer 24/7 delivery services. Standard deliveries are
-                      made between 9AM-6PM, with express and emergency services
-                      available around the clock.
-                    </p>}
+                    {activeFaq === 0 && (
+                      <p className="text-sm py-4 px-5">
+                        We offer 24/7 delivery services. Standard deliveries are
+                        made between 9AM-6PM, with express and emergency services
+                        available around the clock.
+                      </p>
+                    )}
                   </div>
 
                   <div>
-                    <div onClick={handletoggle} className="mt-5 py-7 px-5 shadow-md border border-white rounded-3xl">
+                    <div onClick={() => handleFaqToggle(1)} className="mt-5 py-7 px-5 shadow-md border border-white rounded-3xl cursor-pointer">
                       <p>Tracking</p>
                       <h4 className="font-semibold mb-2 ">
                         How can I track my package?
                       </h4>
                     </div>
-                    {toggle && <p className="text-sm py-4 px-5">
-                      Use our online tracking system with your tracking number,
-                      or call our customer service line for real-time updates.
-                    </p>}
+                    {activeFaq === 1 && (
+                      <p className="text-sm py-4 px-5">
+                        Use our online tracking system with your tracking number,
+                        or call our customer service line for real-time updates.
+                      </p>
+                    )}
                   </div>
 
                   <div>
-                    <div onClick={handletoggle} className="mt-5 py-7 px-5 shadow-md border border-white rounded-3xl">
+                    <div onClick={() => handleFaqToggle(2)} className="mt-5 py-7 px-5 shadow-md border border-white rounded-3xl cursor-pointer">
                       <p>Insurance</p>
                       <h4 className="font-semibold mb-2 ">
                         Do you offer insurance?
                       </h4>
                     </div>
-                    {toggle && <p className="text-sm py-4 px-5">
-                      Yes, all packages are automatically insured up to $100.
-                      Additional insurance coverage is available for high-value
-                      items.
-                    </p>}
+                    {activeFaq === 2 && (
+                      <p className="text-sm py-4 px-5">
+                        Yes, all packages are automatically insured up to $100.
+                        Additional insurance coverage is available for high-value
+                        items.
+                      </p>
+                    )}
                   </div>
 
                 </div>
