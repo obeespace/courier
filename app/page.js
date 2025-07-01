@@ -5,15 +5,17 @@ import { useEffect, useState } from "react";
 import landinpic1 from "../public/shiplanding1.jpg";
 import landinpic2 from "../public/truck.jpg";
 import landinpic3 from "../public/planelanding.jpg";
-import purplebackground from "../public/purplebg.jpg";
+import fastdelivery from "../public/delivery.jpg";
 import { AiOutlineThunderbolt } from "react-icons/ai";
-import { FaRegStar } from "react-icons/fa6";
+import support from "../public/support.jpeg";
 import { RiGlobalLine } from "react-icons/ri";
-import { FiPackage, FiClock, FiUsers } from "react-icons/fi";
+import { FiPackage } from "react-icons/fi";
 import { IoMdCheckmarkCircleOutline } from "react-icons/io";
-import { GoShieldCheck } from "react-icons/go";
-import Swiper from "swiper";
-import { Navigation, Pagination } from "swiper/modules";
+import trust from "../public/trust.jpg";
+import secure from "../public/secureandsafe.jpg";
+import sourcing from "../public/sourcing.jpg";
+import logistics from "../public/logistic.jpg";
+import precure from "../public/precure.jpg";
 // import Swiper and modules styles
 import "swiper/css";
 import "swiper/css/navigation";
@@ -87,6 +89,86 @@ export default function Home() {
               <button className="rounded-lg py-2 px-4 bg-purple-900 shadow-md text-white">
                 Search
               </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* what we do */}
+      <section className="w-5/6 mx-auto rounded-3xl py-20 ">
+        <div className="container">
+          <div className="text-center space-y-4 mb-16">
+            <h2 className="text-2xl font-bold">About Us</h2>
+            <p className="text-muted-foreground max-w-2xl mx-auto">
+              SnappiGo was born from a simple idea: delivery services should be
+              fast, reliable, and accessible to everyone.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 text-sm">
+            <div className="text-center">
+              <div className="flex justify-center relative">
+                <Image
+                  src={sourcing}
+                  alt="fast delivery"
+                  className="rounded-2xl"
+                />
+                <div
+                  className="absolute top-0 left-0 w-full h-full bg-[#2d0036]/20 rounded-2xl"
+                  style={{ mixBlendMode: "multiply" }}
+                ></div>
+              </div>
+              <h3 className="text-lg font-semibold mt-5">SOURCING</h3>
+              <p className="text-muted-foreground w-11/12 mx-auto mt-2">
+                Find the best products without the hassle. Our sourcing experts
+                carefully screen suppliers, secure competitive prices, and
+                handle delivery schedules — freeing you up to focus on growing
+                your business with complete peace of mind.
+              </p>
+            </div>
+
+            <div className="text-center mt-10 md:mt-0">
+              <div className="flex justify-center relative">
+                <Image
+                  src={logistics}
+                  alt="fast delivery"
+                  className="rounded-2xl"
+                />
+                <div
+                  className="absolute top-0 left-0 w-full h-full bg-[#2d0036]/20 rounded-2xl"
+                  style={{ mixBlendMode: "multiply" }}
+                ></div>
+              </div>
+              <h3 className="text-lg font-semibold mt-5">LOGISTICS</h3>
+              <p className="text-muted-foreground w-11/12 mx-auto mt-2">
+                Born from a strong foundation in ocean freight and rail
+                transport, our company thrives on solving complex logistical
+                challenges. We put your needs first, offering flexible, tailored
+                solutions backed by a commitment to reliability and exceptional
+                service.
+              </p>
+            </div>
+
+            <div className="text-center mt-10 md:mt-0">
+              <div className="flex justify-center relative">
+                <Image
+                  src={precure}
+                  alt="fast delivery"
+                  className="rounded-2xl"
+                />
+                <div
+                  className="absolute top-0 left-0 w-full h-full bg-[#2d0036]/20 rounded-2xl"
+                  style={{ mixBlendMode: "multiply" }}
+                ></div>
+              </div>
+              <h3 className="text-lg font-semibold mt-5">PROCUREMENT</h3>
+              <p className="text-muted-foreground w-11/12 mx-auto mt-2">
+                Transform the way you procure. We manage the entire process —
+                from finding the right vendors to finalizing contracts —
+                ensuring every stage runs smoothly. The result? Reduced costs,
+                greater efficiency, and more time for you to drive your business
+                forward.
+              </p>
             </div>
           </div>
         </div>
@@ -201,16 +283,23 @@ export default function Home() {
           <div className="text-center space-y-4 mb-16">
             <h2 className="text-2xl font-bold">Why Choose SnappiGo?</h2>
             <p className="mx-auto font-light">
-              We are committed to providing the best delivery experience possible
+              We are committed to providing the best delivery experience
+              possible
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 text-sm">
             <div className="text-center space-y-4">
-              <div className="flex justify-center">
-                <div className="px-3 py-3 rounded-xl w-fit bg-indigo-400">
-                  <FiClock className="text-indigo-900 text-2xl" />
-                </div>
+              <div className="flex justify-center relative">
+                <Image
+                  src={fastdelivery}
+                  alt="fast delivery"
+                  className="rounded-2xl"
+                />
+                <div
+                  className="absolute top-0 left-0 w-full h-full bg-[#2d0036]/50 rounded-2xl"
+                  style={{ mixBlendMode: "multiply" }}
+                ></div>
               </div>
               <h3 className="text-xl font-semibold">Fast Delivery</h3>
               <p className="text-muted-foreground w-5/6 mx-auto">
@@ -218,11 +307,17 @@ export default function Home() {
               </p>
             </div>
 
-            <div className="text-center space-y-4 mt-6 lg:mt-0">
-              <div className="flex justify-center">
-                <div className="px-3 py-3 rounded-xl w-fit bg-indigo-400">
-                  <GoShieldCheck className="text-indigo-900 text-2xl" />
-                </div>
+            <div className="text-center space-y-4 mt-10 md:mt-0">
+              <div className="flex justify-center relative">
+                <Image
+                  src={secure}
+                  alt="fast delivery"
+                  className="rounded-2xl"
+                />
+                <div
+                  className="absolute top-0 left-0 w-full h-full bg-[#2d0036]/50 rounded-2xl"
+                  style={{ mixBlendMode: "multiply" }}
+                ></div>
               </div>
               <h3 className="text-xl font-semibold">Secure & Safe</h3>
               <p className="text-muted-foreground w-5/6 mx-auto">
@@ -230,11 +325,17 @@ export default function Home() {
               </p>
             </div>
 
-            <div className="text-center space-y-4 mt-6 lg:mt-0">
-              <div className="flex justify-center">
-                <div className="px-3 py-3 rounded-xl w-fit bg-indigo-400">
-                  <FiUsers className="text-indigo-900 text-2xl" />
-                </div>
+            <div className="text-center space-y-4 mt-10 md:mt-0">
+              <div className="flex justify-center relative">
+                <Image
+                  src={support}
+                  alt="fast delivery"
+                  className="rounded-2xl"
+                />
+                <div
+                  className="absolute top-0 left-0 w-full h-full bg-[#2d0036]/50 rounded-2xl"
+                  style={{ mixBlendMode: "multiply" }}
+                ></div>
               </div>
               <h3 className="text-xl font-semibold">24/7 Support</h3>
               <p className="text-muted-foreground w-5/6 mx-auto">
@@ -243,11 +344,17 @@ export default function Home() {
               </p>
             </div>
 
-            <div className="text-center space-y-4 mt-6 lg:mt-0">
-              <div className="flex justify-center">
-                <div className="px-3 py-3 rounded-xl w-fit bg-indigo-400">
-                  <FaRegStar className="text-indigo-900 text-2xl" />
-                </div>
+            <div className="text-center space-y-4 mt-10 md:mt-0">
+              <div className="flex justify-center relative">
+                <Image
+                  src={trust}
+                  alt="fast delivery"
+                  className="rounded-2xl"
+                />
+                <div
+                  className="absolute top-0 left-0 w-full h-full bg-[#2d0036]/50 rounded-2xl"
+                  style={{ mixBlendMode: "multiply" }}
+                ></div>
               </div>
               <h3 className="text-xl font-semibold">Trusted Service</h3>
               <p className="text-muted-foreground w-5/6 mx-auto">
@@ -264,8 +371,7 @@ export default function Home() {
           <div className="text-center space-y-4 mb-5">
             <h2 className="text-2xl font-bold">What Our Customers Say</h2>
             <p className="font-light mx-auto">
-              Dont just take our word for it - hear from our satisfied
-              customers
+              Dont just take our word for it - hear from our satisfied customers
             </p>
           </div>
 

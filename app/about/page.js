@@ -9,6 +9,8 @@ import { TbAward } from "react-icons/tb";
 import { HiOutlineUsers } from "react-icons/hi2";
 import { FiGlobe } from "react-icons/fi";
 import { LuZap } from "react-icons/lu";
+import Image from "next/image";
+import logistics from "../../public/logistic.jpg"; 
 
 const page = () => {
   return (
@@ -96,17 +98,15 @@ const page = () => {
               </div>
             </div>
             <div className="relative">
-              <div className="aspect-square bg-gradient-to-br from-primary/20 to-secondary/20 rounded-3xl flex items-center justify-center">
-                <FiTruck className="h-32 w-32 text-primary" />
-              </div>
+              <Image src={logistics} alt="picture or a dock" className="rounded-xl"/>
               {/* Timeline markers */}
-              <div className="absolute -top-4 -right-4 bg-background border rounded-lg p-3 shadow-lg">
+              <div className="absolute -top-4 -right-4 bg-white text-black border rounded-lg p-3 shadow-lg">
                 <div className="flex items-center gap-2">
                   <MdOutlineDateRange className="h-4 w-4 text-primary" />
                   <span className="text-sm font-medium">Est. 2015</span>
                 </div>
               </div>
-              <div className="absolute -bottom-4 -left-4 bg-background border rounded-lg p-3 shadow-lg">
+              <div className="absolute -bottom-4 -left-4 bg-white text-black border rounded-lg p-3 shadow-lg">
                 <div className="flex items-center gap-2">
                   <IoMdTrendingUp className="h-4 w-4 text-green-500" />
                   <span className="text-sm font-medium">Growing Strong</span>
@@ -205,7 +205,7 @@ const page = () => {
           </section> */}
 
     {/* Company Timeline */}
-      <section className="py-20">
+      <section className="py-20 text-white bg-gradient-to-br from-purple-950 via-indigo-950 to-pink-950">
         <div className="container w-5/6 mx-auto">
           <div className="text-center space-y-4 mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold">Our Journey</h2>
@@ -438,6 +438,52 @@ const page = () => {
               </div>
               <h3 className="font-semibold">Innovation Award</h3>
               <p className="text-sm text-muted-foreground">Tech in Logistics Summit</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Company Culture */}
+      <section className="py-20 bg-muted/30">
+        <div className="container w-5/6 mx-auto">
+          <div className="text-center space-y-4 mb-16">
+            <h2 className="text-3xl lg:text-4xl font-bold">Our Culture & Values</h2>
+            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+              What makes SnappiGo a great place to work and partner with
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 text-center gap-8">
+            <div>
+              <div className="pt-6">
+                
+                <h3 className="text-lg font-semibold mb-3">Team Collaboration</h3>
+                <p className="text-muted-foreground">
+                  We believe in the power of teamwork and foster an environment where every voice is heard and valued.
+                </p>
+              </div>
+            </div>
+
+            <div>
+              <div className="pt-6">
+                
+                <h3 className="text-lg font-semibold mb-3">Professional Growth</h3>
+                <p className="text-muted-foreground">
+                  We invest in our team's development through training programs, mentorship, and career advancement
+                  opportunities.
+                </p>
+              </div>
+            </div>
+
+            <div>
+              <div className="pt-6">
+                
+                <h3 className="text-lg font-semibold mb-3">Community Impact</h3>
+                <p className="text-muted-foreground">
+                  We're committed to giving back to the communities we serve through local partnerships and charitable
+                  initiatives.
+                </p>
+              </div>
             </div>
           </div>
         </div>
