@@ -19,7 +19,7 @@ const page = () => {
   return (
     <main>
       {/* Hero Section */}
-      <section className="py-20 lg:py-32 w-5/6 mx-auto">
+      <section className="py-16 lg:py-24 w-5/6 mx-auto">
         <div className="container">
           <div className="max-w-4xl mx-auto text-center">
             <p variant="secondary" className="w-fit mx-auto mb-2">
@@ -43,7 +43,7 @@ const page = () => {
         <div className="container">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 ">
             <div className="text-center">
-              <div className="text-3xl lg:text-4xl font-bold text-primary mb-2 text-amber-600">
+              <div className="text-3xl lg:text-4xl font-bold text-primary mb-2 text-purple-600">
                 50K+
               </div>
               <div className="text-muted-foreground">Packages Delivered</div>
@@ -55,13 +55,13 @@ const page = () => {
               <div className="text-muted-foreground">Cities Served</div>
             </div>
             <div className="text-center">
-              <div className="text-3xl lg:text-4xl font-bold text-primary mb-2 text-green-500">
+              <div className="text-3xl lg:text-4xl font-bold text-primary mb-2 text-violet-500">
                 99.9%
               </div>
               <div className="text-muted-foreground">On-Time Delivery</div>
             </div>
             <div className="text-center">
-              <div className="text-3xl lg:text-4xl font-bold text-primary mb-2 text-indigo-600">
+              <div className="text-3xl lg:text-4xl font-bold text-primary mb-2 text-fuchsia-600">
                 9
               </div>
               <div className="text-muted-foreground">Years of Excellence</div>

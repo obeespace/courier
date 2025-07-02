@@ -53,10 +53,10 @@ export default function Home() {
             items-center top-0 right-0 left-0 
             bottom-0 text-white w-5/6 mx-auto text-center z-20"
         >
-          <p className="w-4/6 lg:w-full text-2xl mt-5 lg:text-4xl font-semibold">
+          <p className="w-4/6 lg:w-full text-2xl mt-5 lg:text-4xl font-bold">
             Fast & Reliable Delivery Service
           </p>
-          <p className="mt-3 font-thin lg:text-lg text-center">
+          <p className="mt-3 font-normal lg:text-lg text-center">
             Get your packages delivered quickly and securely with our
             professional courier service. Same-day delivery available in major
             cities.

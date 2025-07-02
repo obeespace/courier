@@ -17,25 +17,26 @@ import map from "../../public/map1.jpg";
 import ontime from "../../public/ontime.jpg";
 import safedelivery from "../../public/safedelivery.jpg";
 import customersupport from "../../public/customersupport.jpeg";
+import services from "../../public/services.jpg";
 
 const page = () => {
   return (
     <main>
       {/* Hero Section */}
-      <section className="py-20 lg:py-32 bg-white">
+      <section className="py-16 lg:py-24 bg-white">
         <div className="container w-5/6 mx-auto">
-          <div className="max-w-4xl mx-auto text-center space-y-8">
-            <p className="w-fit mx-auto">Our Services</p>
+          <div className="max-w-4xl mx-auto text-center">
+            <p className="w-fit mx-auto mb-1">Our Services</p>
             <h1 className="text-4xl lg:text-6xl font-bold tracking-tight">
               Comprehensive
               <span className="text-primary block">Delivery Solutions</span>
             </h1>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+            <p className="text-xl text-muted-foreground max-w-3xl mt-3 mx-auto">
               From same-day local deliveries to international shipping, we offer
               a complete range of courier services tailored to meet your
               specific needs.
             </p>
-            <div className="flex justify-center">
+            <div className="flex justify-center mt-8">
               <button className="flex items-center rounded-lg py-2 px-4 cursor-pointer bg-purple-900 shadow-md text-white">
                 <FaRegFileAlt className="mr-2 h-5 w-5" />
                 Get Custom Quote
@@ -43,6 +44,10 @@ const page = () => {
             </div>
           </div>
         </div>
+      </section>
+
+      <section className="md:hidden w-5/6 mx-auto">
+        <Image src={services} alt="services" className="rounded-3xl shadow-md"/>
       </section>
 
       {/* Main Services */}
@@ -330,7 +335,7 @@ const page = () => {
               </div>
             </div>
 
-            <div className="text-center">
+            <div className="text-center mt-7 md:mt-0">
               <div className="pt-6">
                 <Image
                   src={legal}
@@ -349,7 +354,7 @@ const page = () => {
               </div>
             </div>
 
-            <div className="text-center">
+            <div className="text-center mt-7 md:mt-0">
               <div className="pt-6">
                 <Image
                   src={airpickup}
@@ -369,7 +374,7 @@ const page = () => {
               </div>
             </div>
 
-            <div className="text-center">
+            <div className="text-center mt-7 md:mt-0">
               <div className="pt-6">
                 <Image
                   src={freightservice}
