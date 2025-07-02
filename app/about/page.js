@@ -11,6 +11,9 @@ import { FiGlobe } from "react-icons/fi";
 import { LuZap } from "react-icons/lu";
 import Image from "next/image";
 import logistics from "../../public/logistic.jpg"; 
+import communityimpact from "../../public/communityimpact.jpg";
+import careergrowth from "../../public/careergrowth.jpg";
+import teambonding from "../../public/teambonding.jpg";
 
 const page = () => {
   return (
@@ -38,27 +41,27 @@ const page = () => {
       {/* Company Stats */}
       <section className="py-16 w-5/6 mx-auto">
         <div className="container">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-purple-900">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 ">
             <div className="text-center">
-              <div className="text-3xl lg:text-4xl font-bold text-primary mb-2">
+              <div className="text-3xl lg:text-4xl font-bold text-primary mb-2 text-amber-600">
                 50K+
               </div>
               <div className="text-muted-foreground">Packages Delivered</div>
             </div>
             <div className="text-center">
-              <div className="text-3xl lg:text-4xl font-bold text-primary mb-2">
+              <div className="text-3xl lg:text-4xl font-bold text-primary mb-2 text-indigo-500">
                 500+
               </div>
               <div className="text-muted-foreground">Cities Served</div>
             </div>
             <div className="text-center">
-              <div className="text-3xl lg:text-4xl font-bold text-primary mb-2">
+              <div className="text-3xl lg:text-4xl font-bold text-primary mb-2 text-green-500">
                 99.9%
               </div>
               <div className="text-muted-foreground">On-Time Delivery</div>
             </div>
             <div className="text-center">
-              <div className="text-3xl lg:text-4xl font-bold text-primary mb-2">
+              <div className="text-3xl lg:text-4xl font-bold text-primary mb-2 text-indigo-600">
                 9
               </div>
               <div className="text-muted-foreground">Years of Excellence</div>
@@ -456,8 +459,9 @@ const page = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 text-center gap-8">
             <div>
               <div className="pt-6">
+                <Image src={teambonding} alt="community impact" className="rounded-2xl" />
                 
-                <h3 className="text-lg font-semibold mb-3">Team Collaboration</h3>
+                <h3 className="text-lg font-semibold mt-5 mb-2">Team Collaboration</h3>
                 <p className="text-muted-foreground">
                   We believe in the power of teamwork and foster an environment where every voice is heard and valued.
                 </p>
@@ -466,8 +470,9 @@ const page = () => {
 
             <div>
               <div className="pt-6">
+                <Image src={careergrowth} alt="community impact" className="rounded-2xl" />
                 
-                <h3 className="text-lg font-semibold mb-3">Professional Growth</h3>
+                <h3 className="text-lg font-semibold mt-5 mb-2">Professional Growth</h3>
                 <p className="text-muted-foreground">
                   We invest in our team's development through training programs, mentorship, and career advancement
                   opportunities.
@@ -477,8 +482,8 @@ const page = () => {
 
             <div>
               <div className="pt-6">
-                
-                <h3 className="text-lg font-semibold mb-3">Community Impact</h3>
+                <Image src={communityimpact} alt="community impact" className="rounded-2xl" />
+                <h3 className="text-lg font-semibold mt-5 mb-2">Community Impact</h3>
                 <p className="text-muted-foreground">
                   We're committed to giving back to the communities we serve through local partnerships and charitable
                   initiatives.

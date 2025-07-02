@@ -4,7 +4,19 @@ import { FaRegCircleCheck } from "react-icons/fa6";
 import { FiTruck, FiGlobe, FiPackage, FiClock } from "react-icons/fi";
 import { GoShieldCheck } from "react-icons/go";
 import { PiCalculator } from "react-icons/pi";
+import { FaRegFileAlt } from "react-icons/fa";
+import { RiCalendarScheduleLine } from "react-icons/ri";
+import { LuGitCompare } from "react-icons/lu";
 import { FaStar } from "react-icons/fa";
+import Image from 'next/image';
+import medical from "../../public/medicalsupplies.jpg";
+import legal from "../../public/legal.jpg";
+import airpickup from "../../public/airportpickup.jpeg";
+import freightservice from "../../public/FreightServices.jpeg";
+import map from "../../public/map1.jpg";
+import ontime from "../../public/ontime.jpg";
+import safedelivery from "../../public/safedelivery.jpg";
+import customersupport from "../../public/customersupport.jpeg";
 
 
 
@@ -26,10 +38,12 @@ const page = () => {
               From same-day local deliveries to international shipping, we offer a complete range of courier services
               tailored to meet your specific needs.
             </p>
-            <button className="text-lg px-8">
+            <div className='flex justify-center'>
+            <button className='flex items-center rounded-lg py-2 px-4 cursor-pointer bg-purple-900 shadow-md text-white'>
+              <FaRegFileAlt className="mr-2 h-5 w-5"/>
               Get Custom Quote
               
-            </button>
+            </button></div>
           </div>
         </div>
       </section>
@@ -46,7 +60,7 @@ const page = () => {
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 mb-16">
             {/* Same Day Delivery */}
-            <div className="hover:shadow-lg transition-shadow p-9 rounded-2xl">
+            <div className="hover:shadow-lg transition-shadow p-9 bg-gradient-to-br from-purple-50 via-gray-50 to-[#e0e7ff] rounded-2xl">
               
                 <div className="flex items-center justify-between mb-4">
                   <div className="w-16 h-16 bg-primary/10 rounded-lg flex items-center justify-center">
@@ -111,7 +125,7 @@ const page = () => {
             </div>
 
             {/* Express Shipping */}
-            <div className="hover:shadow-lg transition-shadow p-9 rounded-2xl">
+            <div className="hover:shadow-lg shadow-sm transition-shadow p-9 border border-gray-300 rounded-2xl">
               
                 <div className="w-16 h-16 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
                   <FiTruck className="h-8 w-8 text-primary" />
@@ -175,7 +189,7 @@ const page = () => {
 
           {/* Additional Services Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <div className="hover:shadow-lg transition-shadow">
+            <div className="hover:shadow-lg shadow-sm transition-shadow p-9 border border-gray-300 rounded-2xl">
               <div>
                 <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
                   <FiGlobe className="h-6 w-6 text-primary" />
@@ -183,7 +197,7 @@ const page = () => {
                 <p>International Shipping</p>
                 <p>Worldwide delivery with customs handling</p>
               </div>
-              <div>
+              <div className='mt-4'>
                 <ul className="space-y-2 text-sm mb-4">
                   <li className="flex items-center gap-2">
                     <FaRegCircleCheck className="h-4 w-4 text-green-500" />
@@ -207,7 +221,7 @@ const page = () => {
               </div>
             </div>
 
-            <div className="hover:shadow-lg transition-shadow">
+            <div className="hover:shadow-lg shadow-sm transition-shadow p-9 border border-gray-300 rounded-2xl">
               <div>
                 <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
                   <FiPackage className="h-6 w-6 text-primary" />
@@ -215,7 +229,7 @@ const page = () => {
                 <p>Bulk Shipping</p>
                 <p>Volume discounts for business customers</p>
               </div>
-              <div>
+              <div className='mt-4'>
                 <ul className="space-y-2 text-sm mb-4">
                   <li className="flex items-center gap-2">
                     <FaRegCircleCheck className="h-4 w-4 text-green-500" />
@@ -239,7 +253,7 @@ const page = () => {
               </div>
             </div>
 
-            <div className="hover:shadow-lg transition-shadow">
+            <div className="hover:shadow-lg shadow-sm transition-shadow p-9 border border-gray-300 rounded-2xl">
               <div>
                 <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
                   <GoShieldCheck className="h-6 w-6 text-primary" />
@@ -247,7 +261,7 @@ const page = () => {
                 <p>White Glove Service</p>
                 <p>Premium handling for valuable items</p>
               </div>
-              <div>
+              <div className='mt-4'>
                 <ul className="space-y-2 text-sm mb-4">
                   <li className="flex items-center gap-2">
                     <FaRegCircleCheck className="h-4 w-4 text-green-500" />
@@ -287,12 +301,12 @@ const page = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             <div className="text-center">
               <div className="pt-6">
-                
-                <h3 className="text-lg font-semibold mb-2">Medical Deliveries</h3>
+                <Image src={medical} alt='medical deliveries' className='rounded-2xl'/>
+                <h3 className="text-lg font-semibold mb-2 mt-5">Medical Deliveries</h3>
                 <p className="text-sm text-muted-foreground mb-4">
                   Temperature-controlled transport for medical supplies and pharmaceuticals
                 </p>
-                <button variant="outline" size="sm">
+                <button className='rounded-lg py-2 px-4 border hover:bg-purple-900 hover:text-white border-purple-900 shadow-md text-purple-900'>
                   Learn More
                 </button>
               </div>
@@ -300,12 +314,12 @@ const page = () => {
 
             <div className="text-center">
               <div className="pt-6">
-                
-                <h3 className="text-lg font-semibold mb-2">Legal Services</h3>
+                <Image src={legal} alt='medical deliveries' className='rounded-2xl'/>
+                <h3 className="text-lg font-semibold mb-2 mt-5">Legal Services</h3>
                 <p className="text-sm text-muted-foreground mb-4">
                   Secure document delivery with chain of custody for legal firms
                 </p>
-                <button variant="outline" size="sm">
+                <button className='rounded-lg py-2 px-4 border hover:bg-purple-900 hover:text-white border-purple-900 shadow-md text-purple-900'>
                   Learn More
                 </button>
               </div>
@@ -313,12 +327,12 @@ const page = () => {
 
             <div className="text-center">
               <div className="pt-6">
-                
-                <h3 className="text-lg font-semibold mb-2">Airport Services</h3>
+                <Image src={airpickup} alt='medical deliveries' className='rounded-2xl'/>
+                <h3 className="text-lg font-semibold mb-2 mt-5">Airport Services</h3>
                 <p className="text-sm text-muted-foreground mb-4">
                   Direct airport pickup and delivery for time-sensitive shipments
                 </p>
-                <button variant="outline" size="sm">
+                <button className='rounded-lg py-2 px-4 border hover:bg-purple-900 hover:text-white border-purple-900 shadow-md text-purple-900'>
                   Learn More
                 </button>
               </div>
@@ -326,12 +340,12 @@ const page = () => {
 
             <div className="text-center">
               <div className="pt-6">
-                
-                <h3 className="text-lg font-semibold mb-2">Freight Services</h3>
+                <Image src={freightservice} alt='medical deliveries' className='rounded-2xl'/>
+                <h3 className="text-lg font-semibold mb-2 mt-5">Freight Services</h3>
                 <p className="text-sm text-muted-foreground mb-4">
                   Large cargo and freight forwarding for industrial shipments
                 </p>
-                <button variant="outline" size="sm">
+                <button className='rounded-lg py-2 px-4 border hover:bg-purple-900 hover:text-white border-purple-900 shadow-md text-purple-900'>
                   Learn More
                 </button>
               </div>
@@ -382,24 +396,24 @@ const page = () => {
                 </div>
               </div>
 
-              <button size="lg">
+              <button className='flex items-center rounded-lg mt-2 py-2 px-4 cursor-pointer bg-purple-900 shadow-md text-white'>
                 <LuMapPin className="mr-2 h-5 w-5" />
                 Check Service Area
               </button>
             </div>
 
             <div className="relative">
-              <div className="aspect-square bg-gradient-to-br from-primary/20 to-secondary/20 rounded-3xl flex items-center justify-center">
-                <LuMapPin className="h-32 w-32 text-primary" />
-              </div>
+              
+                <Image src={map} alt='map of the globe' className='rounded-4xl'/>
+              
               {/* Coverage Stats */}
-              <div className="absolute -top-4 -right-4 bg-background border rounded-lg p-3 shadow-lg">
+              <div className="absolute -top-4 -right-4 bg-white border rounded-lg p-3 shadow-lg">
                 <div className="text-center">
                   <div className="text-2xl font-bold text-primary">200+</div>
                   <div className="text-xs text-muted-foreground">Countries</div>
                 </div>
               </div>
-              <div className="absolute -bottom-4 -left-4 bg-background border rounded-lg p-3 shadow-lg">
+              <div className="absolute -bottom-4 -left-4 bg-white border rounded-lg p-3 shadow-lg">
                 <div className="text-center">
                   <div className="text-2xl font-bold text-primary">500+</div>
                   <div className="text-xs text-muted-foreground">Cities</div>
@@ -411,22 +425,19 @@ const page = () => {
       </section>
 
       {/* Pricing Calculator CTA */}
-      <section className="py-20 bg-muted/30">
+      <section className="py-20 bg-muted/30 text-white bg-gradient-to-br from-purple-950 via-indigo-950 to-pink-950">
         <div className="container">
           <div className="max-w-3xl mx-auto text-center space-y-8">
-            <div className="w-20 h-20 bg-primary/10 rounded-full flex items-center justify-center mx-auto">
-              <PiCalculator className="h-10 w-10 text-primary" />
-            </div>
             <h2 className="text-3xl lg:text-4xl font-bold">Get Instant Pricing</h2>
             <p className="text-xl text-muted-foreground">
               Use our pricing calculator to get accurate quotes for your specific delivery needs in seconds.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button size="lg" className="text-lg px-8">
+              <button className='flex items-center rounded-lg py-2 px-4 cursor-pointer bg-purple-900 shadow-md text-white'>
                 <PiCalculator className="mr-2 h-5 w-5" />
                 Calculate Price
               </button>
-              <button size="lg" variant="outline" className="text-lg px-8">
+              <button className='rounded-lg py-2 px-4 bg-white text-purple-900'>
                 Request Custom Quote
               </button>
             </div>
@@ -447,9 +458,9 @@ const page = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="text-center">
               <div className="pt-8">
-                
-                <h3 className="text-xl font-semibold mb-4">On-Time Guarantee</h3>
-                <p className="text-muted-foreground mb-4">
+                <Image src={ontime} alt='on time' className='rounded-2xl'/>
+                <h3 className="text-xl font-semibold mt-5 mb-2">On-Time Guarantee</h3>
+                <p className="text-muted-foreground mb-3">
                   99.9% on-time delivery rate with money-back guarantee for express services
                 </p>
                 <div className="flex items-center justify-center gap-1">
@@ -462,9 +473,9 @@ const page = () => {
 
             <div className="text-center">
               <div className="pt-8">
-                
-                <h3 className="text-xl font-semibold mb-4">Safe Delivery Promise</h3>
-                <p className="text-muted-foreground mb-4">
+                <Image src={safedelivery} alt='on time' className='rounded-2xl'/>
+                <h3 className="text-xl font-semibold mt-5 mb-2">Safe Delivery Promise</h3>
+                <p className="text-muted-foreground mb-3">
                   Full insurance coverage and secure handling for all packages with damage protection
                 </p>
                 <div className="flex items-center justify-center gap-1">
@@ -477,9 +488,9 @@ const page = () => {
 
             <div className="text-center">
               <div className="pt-8">
-                
-                <h3 className="text-xl font-semibold mb-4">24/7 Support</h3>
-                <p className="text-muted-foreground mb-4">
+                <Image src={customersupport} alt='on time' className='rounded-2xl'/>
+                <h3 className="text-xl font-semibold mt-5 mb-2">24/7 Support</h3>
+                <p className="text-muted-foreground mb-3">
                   Round-the-clock customer support with dedicated account managers for business clients
                 </p>
                 <div className="flex items-center justify-center gap-1">
@@ -501,14 +512,14 @@ const page = () => {
             Choose the service that fits your needs and experience the SwiftCourier difference today.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button size="lg" variant="secondary" className="text-lg px-8">
+            <button className='flex items-center rounded-lg py-2 px-4 cursor-pointer bg-purple-900 shadow-md text-white'>
+              <RiCalendarScheduleLine className="mr-2 h-5 w-5"/>
               Schedule Pickup
             </button>
             <button
-              size="lg"
-              variant="outline"
-              className="text-lg px-8 border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary"
+              className='flex items-center rounded-lg py-2 px-4 cursor-pointer border border-purple-900 shadow-md text-purple-900 hover:bg-purple-900 hover:text-white'
             >
+              <LuGitCompare className="mr-2 h-5 w-5"/>
               Compare Services
             </button>
           </div>
