@@ -45,7 +45,7 @@ export default function Home() {
         />
         {/* Purple overlay for darkening the image */}
         <div
-          className="absolute top-0 left-0 w-full h-full bg-[#2d0036]/70 z-10 pointer-events-none"
+          className="absolute top-0 left-0 w-full h-full bg-[#2d0036]/50 z-10 pointer-events-none"
           style={{ mixBlendMode: "multiply" }}
         ></div>
         <div

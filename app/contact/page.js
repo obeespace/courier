@@ -49,7 +49,7 @@ const ContactPage = () => {
         />
         {/* Purple overlay for darkening the image */}
         <div
-          className="absolute top-0 left-0 w-full h-full bg-[#2d0036]/85 z-10 pointer-events-none"
+          className="absolute top-0 left-0 w-full h-full bg-[#2d0036]/50 z-10 pointer-events-none"
           style={{ mixBlendMode: "multiply" }}
         ></div>
         <div
@@ -60,7 +60,7 @@ const ContactPage = () => {
           <p className="w-4/6 lg:w-full text-2xl mt-5 lg:text-4xl font-semibold">
             Contact SnappiGo
           </p>
-          <p className="mt-3 font-thin lg:text-lg text-center">
+          <p className="mt-3 lg:text-lg text-center">
             Have questions about our services? Need a custom quote? Our team is
             here to help. Reach out to us through any of the channels below.
           </p>
