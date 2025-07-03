@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "lottie-react": "^2.4.1",
-    "next": "15.3.4",
+    "next": "^15.3.4",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-icons": "^5.5.0",
@@ -18,6 +18,8 @@
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
+    "@swc/core": "^1.12.9",
+    "@swc/wasm": "^1.12.9",
     "@tailwindcss/postcss": "^4",
     "eslint": "^9",
     "eslint-config-next": "15.3.4",
