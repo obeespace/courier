@@ -1,9 +1,10 @@
 import React from "react";
 import { Search } from "lucide-react";
+import Image from "next/image";
 
 const HomeSection = () => {
   return (
-    <div className="w-11/12 mx-auto py-16">
+    <div className="w-5/6 mx-auto py-16">
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-center">
         {/* Left Content - Text and Tracking */}
         <div className="space-y-8">
@@ -38,10 +39,12 @@ const HomeSection = () => {
 
         {/* Center Content - Image */}
         <div className="flex justify-center">
-          <img
-            src="/lovable-uploads/1187405e-f81c-4770-92e7-6b8fb83404d1.png"
+          <Image
+            src="/worker.jpg"
             alt="Delivery person with package"
-            className="max-w-full h-auto"
+            className="max-w-full h-auto rounded-2xl"
+            width={500}
+            height={500}
           />
         </div>
 
