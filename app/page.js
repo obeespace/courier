@@ -21,6 +21,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import ImageSlider from "./components/ImageSlider";
+import HomeSection from "./components/HomeSection";
 
 const images = [landinpic1, landinpic2, landinpic3];
 
@@ -37,38 +38,41 @@ export default function Home() {
   return (
     <main>
       {/* Hero Section with Carousel */}
-      <section className="relative">
-        <Image
-          src={images[current]}
-          alt="carousel image"
-          className="w-screen h-80 lg:h-96 lg:object-cover transition-all duration-700"
-        />
-        {/* Purple overlay for darkening the image */}
-        <div
-          className="absolute top-0 left-0 w-full h-full bg-[#2d0036]/50 z-10 pointer-events-none"
-          style={{ mixBlendMode: "multiply" }}
-        ></div>
-        <div
-          className="absolute flex flex-col justify-center 
-            items-center top-0 right-0 left-0 
-            bottom-0 text-white w-5/6 mx-auto text-center z-20"
-        >
-          <p className="w-4/6 lg:w-full text-2xl mt-5 lg:text-4xl font-bold">
-            Fast & Reliable Delivery Service
-          </p>
-          <p className="mt-3 font-normal lg:text-lg text-center">
-            Get your packages delivered quickly and securely with our
-            professional courier service. Same-day delivery available in major
-            cities.
-          </p>
+      {false && (
+        <section className="relative">
+          <Image
+            src={images[current]}
+            alt="carousel image"
+            className="w-screen h-80 lg:h-96 lg:object-cover transition-all duration-700"
+          />
+          {/* Purple overlay for darkening the image */}
+          <div
+            className="absolute top-0 left-0 w-full h-full bg-[#2d0036]/50 z-10 pointer-events-none"
+            style={{ mixBlendMode: "multiply" }}
+          ></div>
+          <div
+            className="absolute flex flex-col justify-center 
+              items-center top-0 right-0 left-0 
+              bottom-0 text-white w-5/6 mx-auto text-center z-20"
+          >
+            <p className="w-4/6 lg:w-full text-2xl mt-5 lg:text-4xl font-bold">
+              Fast & Reliable Delivery Service
+            </p>
+            <p className="mt-3 font-normal lg:text-lg text-center">
+              Get your packages delivered quickly and securely with our
+              professional courier service. Same-day delivery available in major
+              cities.
+            </p>
 
-          <Link href="contact">
-            <button className="rounded-lg py-2 px-4 bg-purple-900 mt-9 shadow-md text-white">
-              Get Quatation
-            </button>
-          </Link>
-        </div>
-      </section>
+            <Link href="contact">
+              <button className="rounded-lg py-2 px-4 bg-purple-900 mt-9 shadow-md text-white">
+                Get Quatation
+              </button>
+            </Link>
+          </div>
+        </section>
+      )}
+      <HomeSection />
 
       {/* Package Tracking Section */}
       <section className="w-5/6 mx-auto lg:py-32 py-20 bg-muted/30">
