@@ -24,3 +24,12 @@ body {
   color: black;
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/* Sitewide header and paragraph styles */
+.site-header {
+  @apply text-4xl sm:text-6xl md:text-7xl lg:text-8xl mt-20 font-extrabold text-purple-900 mb-6 text-center;
+}
+
+.site-paragraph {
+  @apply text-lg sm:text-xl md:text-2xl lg:text-3xl text-gray-700 font-medium text-center;
+}
