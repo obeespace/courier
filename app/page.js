@@ -23,6 +23,7 @@ import "swiper/css/pagination";
 import ImageSlider from "./components/ImageSlider";
 import HomeSection from "./components/HomeSection";
 import AboutSection from "./components/AboutSection";
+import ServicesSection from "./components/ServicesSection";
 
 const images = [landinpic1, landinpic2, landinpic3];
 
@@ -182,107 +183,112 @@ export default function Home() {
       )}
       <AboutSection />
       {/* Services Section */}
-      <section className="w-5/6 mx-auto rounded-3xl py-20 ">
-        <div className="container">
-          <div className="text-center space-y-4 mb-16">
-            <h2 className="text-2xl font-bold">Our Services</h2>
-            <p className="text-muted-foreground max-w-2xl mx-auto">
-              Comprehensive delivery solutions tailored to meet your specific
-              needs
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div className="shadow-lg rounded-2xl p-8 bg-gradient-to-br from-purple-50 via-gray-50 to-[#e0e7ff]">
-              <div className="px-3 py-3 rounded-xl mb-3 w-fit bg-purple-200 text-purple-500">
-                <AiOutlineThunderbolt className="text-xl" />
-              </div>
-              <p className="font-bold text-lg flex gap-2 items-center">
-                {" "}
-                Same Day Delivery
+      <ServicesSection />
+      {false && (
+        <section className="w-5/6 mx-auto rounded-3xl py-20 ">
+          <div className="container">
+            <div className="text-center space-y-4 mb-16">
+              <h2 className="text-2xl font-bold">Our Services</h2>
+              <p className="text-muted-foreground max-w-2xl mx-auto">
+                Comprehensive delivery solutions tailored to meet your specific
+                needs
               </p>
-
-              <p className="mb-4 text-gray-700">
-                Get your packages delivered within hours in major metropolitan
-                areas
-              </p>
-              <div>
-                <ul className="space-y-2 text-sm">
-                  <li className="flex items-center gap-2">
-                    <IoMdCheckmarkCircleOutline className="h-4 w-4 text-green-500" />
-                    2-4 hour delivery window
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <IoMdCheckmarkCircleOutline className="h-4 w-4 text-green-500" />
-                    Real-time tracking
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <IoMdCheckmarkCircleOutline className="h-4 w-4 text-green-500" />
-                    Signature confirmation
-                  </li>
-                </ul>
-              </div>
             </div>
-            {/* ...repeat for other cards as needed... */}
-            <div className="shadow-lg rounded-2xl p-8 bg-gradient-to-br from-purple-50 via-gray-50 to-[#e0e7ff]">
-              <div className="px-3 py-3 rounded-xl w-fit bg-indigo-200 text-indigo-500 mb-3">
-                <RiGlobalLine className="text-xl" />
-              </div>
-              <div>
-                <p className="font-bold text-lg mb-2">International Shipping</p>
-                <p className="mb-4 text-gray-700">
-                  Reliable worldwide delivery with customs handling and
-                  documentation
+
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              <div className="shadow-lg rounded-2xl p-8 bg-gradient-to-br from-purple-50 via-gray-50 to-[#e0e7ff]">
+                <div className="px-3 py-3 rounded-xl mb-3 w-fit bg-purple-200 text-purple-500">
+                  <AiOutlineThunderbolt className="text-xl" />
+                </div>
+                <p className="font-bold text-lg flex gap-2 items-center">
+                  {" "}
+                  Same Day Delivery
                 </p>
-              </div>
-              <div>
-                <ul className="space-y-2 text-sm">
-                  <li className="flex items-center gap-2">
-                    <IoMdCheckmarkCircleOutline className="h-4 w-4 text-green-500" />
-                    200+ countries served
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <IoMdCheckmarkCircleOutline className="h-4 w-4 text-green-500" />
-                    Customs clearance
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <IoMdCheckmarkCircleOutline className="h-4 w-4 text-green-500" />
-                    Insurance included
-                  </li>
-                </ul>
-              </div>
-            </div>
 
-            <div className="shadow-lg rounded-2xl p-8 bg-gradient-to-br from-purple-50 via-gray-50 to-[#e0e7ff]">
-              <div className="px-3 py-3 rounded-xl w-fit bg-fuchsia-200 text-fuchsia-500 mb-3">
-                <FiPackage className="text-xl" />
+                <p className="mb-4 text-gray-700">
+                  Get your packages delivered within hours in major metropolitan
+                  areas
+                </p>
+                <div>
+                  <ul className="space-y-2 text-sm">
+                    <li className="flex items-center gap-2">
+                      <IoMdCheckmarkCircleOutline className="h-4 w-4 text-green-500" />
+                      2-4 hour delivery window
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <IoMdCheckmarkCircleOutline className="h-4 w-4 text-green-500" />
+                      Real-time tracking
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <IoMdCheckmarkCircleOutline className="h-4 w-4 text-green-500" />
+                      Signature confirmation
+                    </li>
+                  </ul>
+                </div>
               </div>
-              <p className="font-bold text-lg mb-2">Bulk Shipping</p>
-              <p className="mb-4 text-gray-700">
-                Cost-effective solutions for businesses with high-volume
-                shipping needs
-              </p>
+              {/* ...repeat for other cards as needed... */}
+              <div className="shadow-lg rounded-2xl p-8 bg-gradient-to-br from-purple-50 via-gray-50 to-[#e0e7ff]">
+                <div className="px-3 py-3 rounded-xl w-fit bg-indigo-200 text-indigo-500 mb-3">
+                  <RiGlobalLine className="text-xl" />
+                </div>
+                <div>
+                  <p className="font-bold text-lg mb-2">
+                    International Shipping
+                  </p>
+                  <p className="mb-4 text-gray-700">
+                    Reliable worldwide delivery with customs handling and
+                    documentation
+                  </p>
+                </div>
+                <div>
+                  <ul className="space-y-2 text-sm">
+                    <li className="flex items-center gap-2">
+                      <IoMdCheckmarkCircleOutline className="h-4 w-4 text-green-500" />
+                      200+ countries served
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <IoMdCheckmarkCircleOutline className="h-4 w-4 text-green-500" />
+                      Customs clearance
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <IoMdCheckmarkCircleOutline className="h-4 w-4 text-green-500" />
+                      Insurance included
+                    </li>
+                  </ul>
+                </div>
+              </div>
 
-              <div>
-                <ul className="space-y-2 text-sm">
-                  <li className="flex items-center gap-2">
-                    <IoMdCheckmarkCircleOutline className="h-4 w-4 text-green-500" />
-                    Volume discounts
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <IoMdCheckmarkCircleOutline className="h-4 w-4 text-green-500" />
-                    Dedicated account manager
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <IoMdCheckmarkCircleOutline className="h-4 w-4 text-green-500" />
-                    API integration
-                  </li>
-                </ul>
+              <div className="shadow-lg rounded-2xl p-8 bg-gradient-to-br from-purple-50 via-gray-50 to-[#e0e7ff]">
+                <div className="px-3 py-3 rounded-xl w-fit bg-fuchsia-200 text-fuchsia-500 mb-3">
+                  <FiPackage className="text-xl" />
+                </div>
+                <p className="font-bold text-lg mb-2">Bulk Shipping</p>
+                <p className="mb-4 text-gray-700">
+                  Cost-effective solutions for businesses with high-volume
+                  shipping needs
+                </p>
+
+                <div>
+                  <ul className="space-y-2 text-sm">
+                    <li className="flex items-center gap-2">
+                      <IoMdCheckmarkCircleOutline className="h-4 w-4 text-green-500" />
+                      Volume discounts
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <IoMdCheckmarkCircleOutline className="h-4 w-4 text-green-500" />
+                      Dedicated account manager
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <IoMdCheckmarkCircleOutline className="h-4 w-4 text-green-500" />
+                      API integration
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
+      )}
       {/* Features Section */}
       <section className="py-20 lg:mt-20 mt-10 text-white bg-gradient-to-br from-purple-950 via-indigo-950 to-pink-950">
         <div className="container w-5/6 mx-auto">

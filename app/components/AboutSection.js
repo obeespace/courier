@@ -9,21 +9,21 @@ const AboutSection = () => {
       title: "SOURCING",
       image: "/sourcing.jpg",
       description:
-        "Find the best products without hassle. Our experts screen suppliers and secure competitive prices.",
+        "Find the best products without hassle. Our experts screen suppliers.",
     },
     {
       id: 2,
       title: "LOGISTICS",
       image: "/logistic.jpg",
       description:
-        "Solving complex logistical challenges with flexible, tailored solutions backed by reliability.",
+        "Solving complex logistical challenges with flexible solutions.",
     },
     {
       id: 3,
       title: "PROCUREMENT",
       image: "/precure.jpg",
       description:
-        "Transform your procurement process. We manage everything from vendors to contracts.",
+        "Transform your procurement process. We manage vendors to contracts.",
     },
   ];
 
@@ -61,7 +61,7 @@ const AboutSection = () => {
                   ></div>
                 </div>
                 <h3 className="site-subheading mt-5">{item.title}</h3>
-                <p className="text-muted-foreground text-2xl w-11/12 mx-auto mt-2">
+                <p className="text-muted-foreground site-paragraph w-11/12 mx-auto mt-2">
                   {item.description}
                 </p>
               </div>
