@@ -51,9 +51,9 @@ body {
 }
 
 .btn-primary {
-  @apply bg-purple-900 text-white px-8 py-4 rounded-lg text-2xl font-semibold hover:bg-purple-800 transition-colors duration-300 shadow-lg flex items-center gap-2;
+  @apply bg-purple-900 text-white px-8 py-4 rounded-lg text-base sm:text-xl md:text-2xl font-semibold hover:bg-purple-800 transition-colors duration-300 shadow-lg flex items-center gap-2;
 }
 
 .btn-ghost {
-  @apply bg-transparent border-0 text-purple-900 text-2xl font-semibold px-8 py-4 hover:text-purple-700 transition-all duration-300 flex items-center gap-2;
+  @apply bg-transparent border-0 text-purple-900 text-base sm:text-xl md:text-2xl font-semibold px-8 py-4 hover:text-purple-700 transition-all duration-300 flex items-center gap-2;
 }
