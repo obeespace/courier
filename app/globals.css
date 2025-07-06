@@ -30,10 +30,22 @@ body {
   @apply text-4xl sm:text-6xl md:text-7xl lg:text-8xl mt-20 font-extrabold text-purple-900 mb-6 text-center;
 }
 
+.site-header-white {
+  @apply text-4xl sm:text-6xl md:text-7xl lg:text-8xl mt-20 font-extrabold text-white mb-6 text-center;
+}
+
 .site-subheading {
   @apply text-3xl sm:text-3xl md:text-4xl lg:text-4xl mt-10 font-extrabold text-purple-900 mb-4 text-center;
 }
 
+.site-subheading-white {
+  @apply text-3xl sm:text-3xl md:text-4xl lg:text-4xl mt-10 font-extrabold text-white mb-4 text-center;
+}
+
 .site-paragraph {
   @apply text-lg sm:text-xl md:text-2xl lg:text-3xl text-gray-700 font-medium text-center;
+}
+
+.site-paragraph-white {
+  @apply text-lg sm:text-xl md:text-2xl lg:text-3xl text-white font-medium text-center;
 }

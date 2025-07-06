@@ -25,6 +25,7 @@ import HomeSection from "./components/HomeSection";
 import AboutSection from "./components/AboutSection";
 import ServicesSection from "./components/ServicesSection";
 import FeatureSection from "./components/FeatureSection";
+import SliderSection from "./components/SliderSection";
 
 const images = [landinpic1, landinpic2, landinpic3];
 
@@ -381,19 +382,24 @@ export default function Home() {
           </div>
         </section>
       )}
-      <section className="lg:my-28 my-16">
-        <div className="container w-5/6 mx-auto">
-          {/* Testimonials Section */}
-          <div className="text-center space-y-4 mb-5">
-            <h2 className="text-2xl font-bold">What Our Customers Say</h2>
-            <p className="font-light mx-auto">
-              Dont just take our word for it - hear from our satisfied customers
-            </p>
-          </div>
+      {/* Testimonial Slide */}
+      <SliderSection />
+      {false && (
+        <section className="lg:my-28 my-16">
+          <div className="container w-5/6 mx-auto">
+            {/* Testimonials Section */}
+            <div className="text-center space-y-4 mb-5">
+              <h2 className="text-2xl font-bold">What Our Customers Say</h2>
+              <p className="font-light mx-auto">
+                Dont just take our word for it - hear from our satisfied
+                customers
+              </p>
+            </div>
 
-          <ImageSlider />
-        </div>
-      </section>
+            <ImageSlider />
+          </div>
+        </section>
+      )}
       {/* CTA Section */}
       <section className="mb-16 bg-primary text-primary-foreground">
         <div className="container w-5/6 mx-auto text-center space-y-8">

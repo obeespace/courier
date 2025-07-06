@@ -38,8 +38,8 @@ const FeatureSection = () => {
       <section className="py-20 lg:mt-20 mt-10 text-white bg-gradient-to-br from-purple-950 via-indigo-950 to-pink-950">
         <div className="container w-5/6 mx-auto">
           <div className="text-center space-y-4 mb-16">
-            <h2 className="text-2xl font-bold">Why Choose SnappiGo?</h2>
-            <p className="mx-auto font-light">
+            <h2 className="site-header-white ">Why Choose SnappiGo?</h2>
+            <p className="mx-auto site-subheading-white">
               We are committed to providing the best delivery experience
               possible
             </p>
@@ -66,8 +66,8 @@ const FeatureSection = () => {
                     style={{ mixBlendMode: "multiply" }}
                   ></div>
                 </div>
-                <h3 className="text-xl font-semibold">{feature.title}</h3>
-                <p className="text-muted-foreground w-5/6 mx-auto">
+                <h3 className="site-subheading-white">{feature.title}</h3>
+                <p className="text-muted-foreground site-paragraph-white w-5/6 mx-auto">
                   {feature.description}
                 </p>
               </div>
