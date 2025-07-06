@@ -26,6 +26,7 @@ import AboutSection from "./components/AboutSection";
 import ServicesSection from "./components/ServicesSection";
 import FeatureSection from "./components/FeatureSection";
 import SliderSection from "./components/SliderSection";
+import CTASection from "./components/CTASection";
 
 const images = [landinpic1, landinpic2, landinpic3];
 
@@ -401,22 +402,25 @@ export default function Home() {
         </section>
       )}
       {/* CTA Section */}
-      <section className="mb-16 bg-primary text-primary-foreground">
-        <div className="container w-5/6 mx-auto text-center space-y-8">
-          <h2 className="text-3xl lg:text-4xl font-bold">
-            Ready to Ship with SnappiGo?
-          </h2>
-          <p className="text-xl opacity-90 max-w-2xl mx-auto">
-            Join thousands of satisfied customers who trust us with their
-            deliveries. Get started today and experience the difference.
-          </p>
-          <div className="flex justify-center">
-            <button className="rounded-lg py-2 px-4 bg-purple-900 mt-9 shadow-md text-white">
-              Contact Sales
-            </button>
+      <CTASection />
+      {false && (
+        <section className="mb-16 bg-primary text-primary-foreground">
+          <div className="container w-5/6 mx-auto text-center space-y-8">
+            <h2 className="text-3xl lg:text-4xl font-bold">
+              Ready to Ship with SnappiGo?
+            </h2>
+            <p className="text-xl opacity-90 max-w-2xl mx-auto">
+              Join thousands of satisfied customers who trust us with their
+              deliveries. Get started today and experience the difference.
+            </p>
+            <div className="flex justify-center">
+              <button className="rounded-lg py-2 px-4 bg-purple-900 mt-9 shadow-md text-white">
+                Contact Sales
+              </button>
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
+      )}
     </main>
   );
 }

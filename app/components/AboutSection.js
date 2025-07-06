@@ -69,7 +69,7 @@ const AboutSection = () => {
           </div>
           {/* Read More Button */}
           <div className="absolute bottom-8 right-8">
-            <button className="flex text-3xl items-center gap-2 px-6 py-3 bg-transparent border-0 border-purple-900 text-purple-900 rounded-lg hover:bg-purple-900 hover:text-white transition-all duration-300 font-semibold">
+            <button className="btn-ghost">
               Read More
               <ArrowRight size={20} />
             </button>

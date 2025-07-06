@@ -88,10 +88,8 @@ const ServicesSection = () => {
             </div>
 
             {/* View All Services Button */}
-            <div className="text-center mt-12">
-              <button className="bg-purple-900 text-white px-8 py-4 rounded-lg text-xl font-semibold hover:bg-purple-800 transition-colors duration-300 shadow-lg">
-                View All Services
-              </button>
+            <div className="flex justify-center mt-12">
+              <button className="btn-primary">View All Services</button>
             </div>
           </div>
         </section>
