@@ -24,6 +24,7 @@ import ImageSlider from "./components/ImageSlider";
 import HomeSection from "./components/HomeSection";
 import AboutSection from "./components/AboutSection";
 import ServicesSection from "./components/ServicesSection";
+import FeatureSection from "./components/FeatureSection";
 
 const images = [landinpic1, landinpic2, landinpic3];
 
@@ -290,92 +291,96 @@ export default function Home() {
         </section>
       )}
       {/* Features Section */}
-      <section className="py-20 lg:mt-20 mt-10 text-white bg-gradient-to-br from-purple-950 via-indigo-950 to-pink-950">
-        <div className="container w-5/6 mx-auto">
-          <div className="text-center space-y-4 mb-16">
-            <h2 className="text-2xl font-bold">Why Choose SnappiGo?</h2>
-            <p className="mx-auto font-light">
-              We are committed to providing the best delivery experience
-              possible
-            </p>
+      <FeatureSection />
+      {false && (
+        <section className="py-20 lg:mt-20 mt-10 text-white bg-gradient-to-br from-purple-950 via-indigo-950 to-pink-950">
+          <div className="container w-5/6 mx-auto">
+            <div className="text-center space-y-4 mb-16">
+              <h2 className="text-2xl font-bold">Why Choose SnappiGo?</h2>
+              <p className="mx-auto font-light">
+                We are committed to providing the best delivery experience
+                possible
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 text-sm">
+              <div className="text-center space-y-4">
+                <div className="flex justify-center relative">
+                  <Image
+                    src={fastdelivery}
+                    alt="fast delivery"
+                    className="rounded-2xl"
+                  />
+                  <div
+                    className="absolute top-0 left-0 w-full h-full bg-[#2d0036]/50 rounded-2xl"
+                    style={{ mixBlendMode: "multiply" }}
+                  ></div>
+                </div>
+                <h3 className="text-xl font-semibold">Fast Delivery</h3>
+                <p className="text-muted-foreground w-5/6 mx-auto">
+                  Same-day and next-day delivery available for urgent shipments
+                </p>
+              </div>
+
+              <div className="text-center space-y-4 mt-10 md:mt-0">
+                <div className="flex justify-center relative">
+                  <Image
+                    src={secure}
+                    alt="fast delivery"
+                    className="rounded-2xl"
+                  />
+                  <div
+                    className="absolute top-0 left-0 w-full h-full bg-[#2d0036]/50 rounded-2xl"
+                    style={{ mixBlendMode: "multiply" }}
+                  ></div>
+                </div>
+                <h3 className="text-xl font-semibold">Secure & Safe</h3>
+                <p className="text-muted-foreground w-5/6 mx-auto">
+                  Your packages are fully insured and handled with the utmost
+                  care
+                </p>
+              </div>
+
+              <div className="text-center space-y-4 mt-10 md:mt-0">
+                <div className="flex justify-center relative">
+                  <Image
+                    src={support}
+                    alt="fast delivery"
+                    className="rounded-2xl"
+                  />
+                  <div
+                    className="absolute top-0 left-0 w-full h-full bg-[#2d0036]/50 rounded-2xl"
+                    style={{ mixBlendMode: "multiply" }}
+                  ></div>
+                </div>
+                <h3 className="text-xl font-semibold">24/7 Support</h3>
+                <p className="text-muted-foreground w-5/6 mx-auto">
+                  Our customer service team is available around the clock to
+                  help you
+                </p>
+              </div>
+
+              <div className="text-center space-y-4 mt-10 md:mt-0">
+                <div className="flex justify-center relative">
+                  <Image
+                    src={trust}
+                    alt="fast delivery"
+                    className="rounded-2xl"
+                  />
+                  <div
+                    className="absolute top-0 left-0 w-full h-full bg-[#2d0036]/50 rounded-2xl"
+                    style={{ mixBlendMode: "multiply" }}
+                  ></div>
+                </div>
+                <h3 className="text-xl font-semibold">Trusted Service</h3>
+                <p className="text-muted-foreground w-5/6 mx-auto">
+                  Over 50,000 satisfied customers trust us with their deliveries
+                </p>
+              </div>
+            </div>
           </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 text-sm">
-            <div className="text-center space-y-4">
-              <div className="flex justify-center relative">
-                <Image
-                  src={fastdelivery}
-                  alt="fast delivery"
-                  className="rounded-2xl"
-                />
-                <div
-                  className="absolute top-0 left-0 w-full h-full bg-[#2d0036]/50 rounded-2xl"
-                  style={{ mixBlendMode: "multiply" }}
-                ></div>
-              </div>
-              <h3 className="text-xl font-semibold">Fast Delivery</h3>
-              <p className="text-muted-foreground w-5/6 mx-auto">
-                Same-day and next-day delivery available for urgent shipments
-              </p>
-            </div>
-
-            <div className="text-center space-y-4 mt-10 md:mt-0">
-              <div className="flex justify-center relative">
-                <Image
-                  src={secure}
-                  alt="fast delivery"
-                  className="rounded-2xl"
-                />
-                <div
-                  className="absolute top-0 left-0 w-full h-full bg-[#2d0036]/50 rounded-2xl"
-                  style={{ mixBlendMode: "multiply" }}
-                ></div>
-              </div>
-              <h3 className="text-xl font-semibold">Secure & Safe</h3>
-              <p className="text-muted-foreground w-5/6 mx-auto">
-                Your packages are fully insured and handled with the utmost care
-              </p>
-            </div>
-
-            <div className="text-center space-y-4 mt-10 md:mt-0">
-              <div className="flex justify-center relative">
-                <Image
-                  src={support}
-                  alt="fast delivery"
-                  className="rounded-2xl"
-                />
-                <div
-                  className="absolute top-0 left-0 w-full h-full bg-[#2d0036]/50 rounded-2xl"
-                  style={{ mixBlendMode: "multiply" }}
-                ></div>
-              </div>
-              <h3 className="text-xl font-semibold">24/7 Support</h3>
-              <p className="text-muted-foreground w-5/6 mx-auto">
-                Our customer service team is available around the clock to help
-                you
-              </p>
-            </div>
-
-            <div className="text-center space-y-4 mt-10 md:mt-0">
-              <div className="flex justify-center relative">
-                <Image
-                  src={trust}
-                  alt="fast delivery"
-                  className="rounded-2xl"
-                />
-                <div
-                  className="absolute top-0 left-0 w-full h-full bg-[#2d0036]/50 rounded-2xl"
-                  style={{ mixBlendMode: "multiply" }}
-                ></div>
-              </div>
-              <h3 className="text-xl font-semibold">Trusted Service</h3>
-              <p className="text-muted-foreground w-5/6 mx-auto">
-                Over 50,000 satisfied customers trust us with their deliveries
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
+        </section>
+      )}
       <section className="lg:my-28 my-16">
         <div className="container w-5/6 mx-auto">
           {/* Testimonials Section */}
