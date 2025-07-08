@@ -94,7 +94,7 @@ const page = () => {
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
           {/* Main Tracking Info */}
-          <div className="col-span-2">
+          <div className="lg:col-span-2">
             {/* Live Map */}
             <div className="shadow-lg border-0 bg-white/80 p-8 rounded-2xl backdrop-blur">
               <p className="flex items-center gap-2 font-semibold text-xl mb-4">
@@ -146,9 +146,9 @@ const page = () => {
                 Delivery Timeline
               </p>
 
-              <div className="flex justify-between items-center">
+              <div className="md:flex justify-between items-center">
                 <div className="flex gap-2">
-                  <div className="py-1 px-3 bg-green-500 w-fit flex items-center rounded-full">
+                  <div className="w-10 h-10 bg-green-500 flex items-center justify-center rounded-full">
                     <Package className="w-5 h-5 text-white" />
                   </div>
                   <div>
@@ -156,12 +156,12 @@ const page = () => {
                     <p className="text-sm text-gray-500">New York, NY</p>
                   </div>
                 </div>
-                <p className="text-sm">Today • 9:15 AM</p>
+                <p className="text-right mt-3 md-mt-0 text-sm">Today • 9:15 AM</p>
               </div>
 
-              <div className="flex justify-between mt-7 items-center">
+              <div className="md:flex justify-between mt-10 items-center">
                 <div className="flex gap-2">
-                  <div className="py-1 px-3 bg-green-500 w-fit flex items-center rounded-full">
+                  <div className="w-10 h-10 bg-green-500 flex items-center justify-center rounded-full">
                     <Truck className="w-5 h-5 text-white" />
                   </div>
                   <div>
@@ -171,12 +171,12 @@ const page = () => {
                     </p>
                   </div>
                 </div>
-                <p className="text-sm">Today • 10:30 AM</p>
+                <p className="text-right mt-3 md-mt-0 text-sm">Today • 10:30 AM</p>
               </div>
 
-              <div className="flex justify-between mt-7 items-center">
+              <div className="md:flex justify-between mt-10 items-center">
                 <div className="flex gap-2 animate-pulse">
-                  <div className="py-1 px-3 bg-blue-500 w-fit flex items-center rounded-full">
+                  <div className="w-10 h-10 bg-blue-500 flex items-center justify-center rounded-full">
                     <Send className="w-5 h-5 text-white" />
                   </div>
                   <div>
@@ -184,10 +184,10 @@ const page = () => {
                     <p className="text-sm text-gray-500">Brooklyn, NY</p>
                   </div>
                 </div>
-                <p className="text-sm">Today • 2:45 PM</p>
+                <p className="text-right mt-3 md-mt-0 text-sm">Today • 2:45 PM</p>
               </div>
 
-              <div className="flex justify-between mt-7 text-gray-400 items-center">
+              <div className="md:flex justify-between mt-10 text-gray-400 items-center">
                 <div className="flex gap-2">
                   <div className="py-1 px-3 bg-gray-400 w-fit flex items-center rounded-full">
                     <Send className="w-5 h-5 text-white" />
@@ -197,14 +197,14 @@ const page = () => {
                     <p className="text-sm">456 Delivery St</p>
                   </div>
                 </div>
-                <p className="text-sm">Today • 2:45 PM</p>
+                <p className="text-right mt-3 md-mt-0 text-sm">Today • 2:45 PM</p>
               </div>
             </div>
           </div>
           {/* Sidebar */}
           <div className="space-y-6">
             {/* Driver Info */}
-            <div className="shadow-lg border-0 bg-white/80 backdrop-blur p-8">
+            <div className="shadow-lg border-0 backdrop-blur p-8">
               <p className="flex items-center gap-2 mb-4 font-semibold text-xl">
                 <User className="w-5 h-5 text-indigo-700" />
                 Your Driver
