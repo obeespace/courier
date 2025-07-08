@@ -1,5 +1,3 @@
-"use client";
-import React, { useState } from "react";
 import {
   Search,
   Package,
@@ -19,104 +17,7 @@ import {
 } from "lucide-react";
 
 const page = () => {
-  const [trackingNumber, setTrackingNumber] = useState("");
-  const [isTracking, setIsTracking] = useState(false);
-  const [trackingData, setTrackingData] = useState(null);
-
-  const mockTrackingData = {
-    trackingNumber: "SC2024001234567",
-    status: "in_transit",
-    statusText: "In Transit",
-    estimatedDelivery: "Today, 3:30 PM",
-    progress: 75,
-    sender: {
-      name: "TechStart Inc.",
-      address: "123 Business Ave, New York, NY 10001",
-    },
-    recipient: {
-      name: "John Davis",
-      address: "456 Delivery St, Brooklyn, NY 11201",
-      phone: "+1 (555) 123-4567",
-    },
-    package: {
-      weight: "2.5 lbs",
-      dimensions: '12" x 8" x 4"',
-      service: "Same Day Delivery",
-      value: "$150.00",
-    },
-    timeline: [
-      {
-        status: "Package Picked Up",
-        time: "9:15 AM",
-        date: "Today",
-        location: "New York, NY",
-        completed: true,
-        icon: Package,
-      },
-      {
-        status: "In Transit to Facility",
-        time: "10:30 AM",
-        date: "Today",
-        location: "Brooklyn Sorting Facility",
-        completed: true,
-        icon: Truck,
-      },
-      {
-        status: "Out for Delivery",
-        time: "2:45 PM",
-        date: "Today",
-        location: "Brooklyn, NY",
-        completed: true,
-        icon: Navigation,
-        current: true,
-      },
-      {
-        status: "Delivered",
-        time: "3:30 PM (Est.)",
-        date: "Today",
-        location: "456 Delivery St",
-        completed: false,
-        icon: CheckCircle,
-      },
-    ],
-    driver: {
-      name: "Mike Rodriguez",
-      phone: "+1 (555) 987-6543",
-      vehicle: "Van #247",
-      rating: 4.9,
-    },
-    liveLocation: {
-      lat: 40.6892,
-      lng: -74.0445,
-      address: "Currently on Atlantic Ave, Brooklyn",
-    },
-  };
-
-  const handleTrack = () => {
-    if (!trackingNumber.trim()) return;
-
-    setIsTracking(true);
-    // Simulate API call
-    setTimeout(() => {
-      setTrackingData(mockTrackingData);
-      setIsTracking(false);
-    }, 1500);
-  };
-
-  const getStatusColor = (status) => {
-    switch (status) {
-      case "delivered":
-        return "bg-green-500";
-      case "in_transit":
-        return "bg-blue-500";
-      case "picked_up":
-        return "bg-amber-500";
-      case "pending":
-        return "bg-gray-400";
-      default:
-        return "bg-gray-400";
-    }
-  };
+  
   return (
     <main className="min-h-screen">
       {/* Package Tracking Section */}
@@ -405,7 +306,7 @@ const page = () => {
       {/* )} */}
 
       {/* Quick Actions */}
-      {!trackingData && (
+      
         <div className="max-w-4xl mx-auto mt-16">
           <div className="border border-gray-300 p-10 rounded-2xl">
             <p className="text-xl font-semibold">Need Help?</p>
@@ -440,7 +341,7 @@ const page = () => {
             </div>
           </div>
         </div>
-      )}
+
     </main>
   );
 };
