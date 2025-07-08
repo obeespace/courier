@@ -45,7 +45,7 @@ const Header = () => {
 
         <div className="hidden lg:flex gap-8">
           
-          <Link href="/contact" className="rounded-lg py-2 px-4 bg-purple-900 shadow-md text-white">Track Parcel</Link>
+          <Link href="/track" className="rounded-lg py-2 px-4 bg-purple-900 shadow-md text-white">Track Parcel</Link>
         </div>
 
         <div className="flex lg:hidden" onClick={handleMenu}>
@@ -66,7 +66,7 @@ const Header = () => {
             <Link href='service'><p className="flex gap-3 items-center" onClick={() => setOpen(false)}><GrProjects/> Services</p></Link>
               <Link href="about" ><p className="flex gap-3 items-center" onClick={() => setOpen(false)}><MdOutlineWorkspaces/> About Us</p></Link>
               <Link href='contact'><p className="flex gap-3 items-center" onClick={() => setOpen(false)}><LuMessageSquareText/> Contact Us</p></Link>
-              <Link href='contact'><p className="flex gap-3 items-center" onClick={() => setOpen(false)}><MdOutlineTrackChanges /> Track Parcel</p></Link>
+              <Link href='track'><p className="flex gap-3 items-center" onClick={() => setOpen(false)}><MdOutlineTrackChanges /> Track Parcel</p></Link>
               
             </div>
 
